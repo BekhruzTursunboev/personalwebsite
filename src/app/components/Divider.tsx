@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,12 +26,10 @@ export default function Divider() {
   }, []);
 
   return (
-    <div ref={root} className="relative py-20 sm:py-28 bg-[#060606] overflow-hidden">
-      {/* Subtle mountain strip */}
+    <div ref={root} className="relative py-20 sm:py-28 bg-[var(--bg)] overflow-hidden">
+      {/* Subtle geometric accent */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="relative w-[320px] h-[180px] sm:w-[480px] sm:h-[240px] rounded-2xl overflow-hidden opacity-[0.08]">
-          <Image src="/mountain-dark.jpg" alt="" fill className="object-cover" sizes="480px" />
-        </div>
+        <div className="w-px h-24 bg-[var(--accent)]/[0.06]" />
       </div>
 
       {/* Content */}

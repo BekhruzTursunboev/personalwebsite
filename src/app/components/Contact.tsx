@@ -138,9 +138,9 @@ export default function Contact() {
   }, []);
 
   return (
-    <section ref={root} className="relative bg-[#060606] py-24 sm:py-32 md:py-40">
+    <section ref={root} className="relative bg-[var(--bg)] py-24 sm:py-32 md:py-40">
       {/* Subtle top gradient */}
-      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-[#060606] to-transparent pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-[var(--bg)] to-transparent pointer-events-none" />
 
       <div className="relative z-10 px-6 sm:px-10 md:px-16 lg:px-24 max-w-6xl mx-auto">
         {/* Two-column grid */}

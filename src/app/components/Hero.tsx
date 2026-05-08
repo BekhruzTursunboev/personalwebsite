@@ -25,7 +25,7 @@ export default function Hero() {
   return (
     <section
       ref={root}
-      className="relative min-h-screen bg-[#060606] overflow-hidden"
+      className="relative min-h-screen bg-[var(--bg)] overflow-hidden"
     >
       {/* ===== Subtle gradient bg ===== */}
       <div className="absolute inset-0 pointer-events-none" style={{
@@ -47,11 +47,11 @@ export default function Hero() {
           />
           {/* dark overlay on image */}
           <div className="absolute inset-0" style={{
-            background: "linear-gradient(to right, transparent 0%, #060606 100%), linear-gradient(to bottom, rgba(6,6,6,0.3) 0%, rgba(6,6,6,0.6) 100%)"
+            background: "linear-gradient(to right, transparent 0%, var(--bg) 100%), linear-gradient(to bottom, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.6) 100%)"
           }} />
 
           {/* Profile photo overlapping the image */}
-          <div className="absolute bottom-12 right-[-36px] w-[72px] h-[96px] rounded-lg overflow-hidden shadow-2xl ring-2 ring-[#060606] z-20">
+          <div className="absolute bottom-12 right-[-36px] w-[72px] h-[96px] rounded-lg overflow-hidden shadow-2xl ring-2 ring-[var(--bg)] z-20">
             <Image
               src="/profile.jpg"
               alt="Bekhruz"
